@@ -40,7 +40,9 @@ In a random mirror, pictures flip randomly from left to right.
 
 ### You can see the sample image loaded as follows:
 
- <img width="500" alt="截屏2023-06-23 22 10 42" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/2a18b5f9-c840-4977-b67b-81b89d6f5cd1"><img width="500" alt="截屏2023-06-23 22 10 53" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/abb4a9f2-9853-4aaf-bda1-8877bae8a4e7">
+ <img width="500" alt="截屏2023-06-23 22 10 42" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/2a18b5f9-c840-4977-b67b-81b89d6f5cd1">
+ 
+ <img width="500" alt="截屏2023-06-23 22 10 53" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/abb4a9f2-9853-4aaf-bda1-8877bae8a4e7">
 
 ## Definition model
 
