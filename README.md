@@ -10,7 +10,9 @@ CycleGAN is a model for image-to-image conversion that is able to learn the tran
 
 ## Data loading and preprocessing
 
-The training of the data set went through three iterations. The dataset used in the first code was the Tom and Jerry dataset that I searched and downloaded in Kaggle. Data set download link：https://www.kaggle.com/datasets/balabaskar/tom-and-jerry-image-classification
+The training of the data set went through three iterations. The dataset used in the first code was the Tom and Jerry dataset that I searched and downloaded in Kaggle. 
+
+Data set download link：https://www.kaggle.com/datasets/balabaskar/tom-and-jerry-image-classification
 
 ```
 train_Tom = tf.data.Dataset.list_files('/content/tom_and_jerry3/trainA/tom/*.jpg')
@@ -52,7 +54,6 @@ generator_f = pix2pix.unet_generator(OUTPUT_CHANNELS, norm_type='instancenorm')
 
 discriminator_x = pix2pix.discriminator(norm_type='instancenorm', target=False)
 discriminator_y = pix2pix.discriminator(norm_type='instancenorm', target=False)
-
 ```
 This code uses the Pix2Pix implementation in Tensorflow to create the generator and discriminator. The generator is used to perform image transformations (for example, from Tom to Jerry), while the discriminator is used to determine whether the image is real (for example, whether an image really looks like Jerry).
 
@@ -105,6 +106,55 @@ def train_step(real_x, real_y):
                                               generator_g.trainable_variables))
     ...
 ```
+
+## Train and save the model
+
+During training, I generate and save images according to a certain number of steps in order to visualize the progress of the model. 
+
+### The key code is as follows:
+
+```
+for epoch in range(EPOCHS):
+    start = time.time()
+
+    n = 0
+    for image_x, image_y in tf.data.Dataset.zip((train_horses, train_zebras)):
+        train_step(image_x, image_y)
+        if n % 10 == 0:
+            print ('.', end='')
+        n+=1
+
+    clear_output(wait=True)
+    # Using a consistent image (sample_horse) so that the progress of the model is visible.
+    generate_images(generator_g, sample_horse, epoch)
+```
+
+In this code, I train each pair of images in the data set. For every 10 sessions, we print a dot to show our progress. At the end of each epoch, we use a consistent sample image to generate and save an image so that we can see the improvement of the model over time.
+
+## Generate and display images
+
+```
+def generate_images(model, test_input, epoch):
+    prediction = model(test_input)
+        
+    plt.figure(figsize=(12, 12))
+
+    display_list = [test_input[0], tf.squeeze(prediction[0])]
+    title = ['Input Image', 'Predicted Image']
+
+    for i in range(2):
+        plt.subplot(1, 2, i+1)
+        plt.title(title[i])
+        # getting the pixel values between [0, 1] to plot it.
+        plt.imshow(display_list[i] * 0.5 + 0.5)
+        plt.axis('off')
+    plt.savefig('image_at_epoch_{:04d}.png'.format(epoch))
+    plt.show()
+```
+
+In this code, I use the model to make a prediction on the input image, and then display the input image and the prediction image. This allows you to visually see how the model is performing. I save the generated images for subsequent analysis and comparison.
+
+<img width="1013" alt="截屏2023-06-22 21 03 49" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/bb5b6c82-b892-4f28-84c3-222994582ac8">
 
 
 
