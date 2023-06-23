@@ -40,9 +40,11 @@ In a random mirror, pictures flip randomly from left to right.
 
 ### You can see the sample image loaded as follows:
 
+<p align="center">
  <img width="500" alt="截屏2023-06-23 22 10 42" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/2a18b5f9-c840-4977-b67b-81b89d6f5cd1">
  
  <img width="500" alt="截屏2023-06-23 22 10 53" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/abb4a9f2-9853-4aaf-bda1-8877bae8a4e7">
+ </p>
 
 ## Definition model
 
@@ -156,14 +158,20 @@ def generate_images(model, test_input, epoch):
 
 In this code, I use the model to make a prediction on the input image, and then display the input image and the prediction image. This allows you to visually see how the model is performing. I save the generated images for subsequent analysis and comparison.
 
-<img width="500" alt="截屏2023-06-22 18 10 30" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/2822ac57-b37e-4269-9b6c-63deb391806b"><img width="509" alt="截屏2023-06-22 21 03 49" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/bb5b6c82-b892-4f28-84c3-222994582ac8">
+<p align="center">
+<img width="500" alt="截屏2023-06-22 18 10 30" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/2822ac57-b37e-4269-9b6c-63deb391806b">
+
+<img width="509" alt="截屏2023-06-22 21 03 49" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/bb5b6c82-b892-4f28-84c3-222994582ac8">
+</p>
 
 The results obtained from the previous training are the same as the results shown in the above figure. The changes in the trained pictures are not perfect, only a small part of the colors have changed, but it can be seen that they are gradually changing into Jerry's colors.
 In view of this situation, I thought that the original data set might not be fully matched in this training task, so I re-cropped and adjusted the positions and sizes of Tom and Jerry in the data set, so that the main characters were concentrated in the middle of the screen, and re-adjusted the data set.
 
 ### The result is the following picture
 
-<img width="480" alt="截屏2023-06-23 00 03 19" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/65bf8cd5-0a0b-4656-a249-6abbf60c7a2c"><img width="520" alt="截屏2023-06-23 22 50 18" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/c573e2b2-584a-4d1d-8261-463fc81d3437">
-
+<p align="center">
+<img width="480" alt="截屏2023-06-23 00 03 19" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/65bf8cd5-0a0b-4656-a249-6abbf60c7a2c">
+<img width="520" alt="截屏2023-06-23 22 50 18" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/c573e2b2-584a-4d1d-8261-463fc81d3437">
+</p>p
 
 
