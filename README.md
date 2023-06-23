@@ -172,6 +172,10 @@ In view of this situation, I thought that the original data set might not be ful
 <p align="center">
 <img width="480" alt="截屏2023-06-23 00 03 19" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/65bf8cd5-0a0b-4656-a249-6abbf60c7a2c">
 <img width="520" alt="截屏2023-06-23 22 50 18" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/c573e2b2-584a-4d1d-8261-463fc81d3437">
-</p>p
+</p>
 
+
+![下载 (3)](https://github.com/22016759/Coding3-Final-Project/assets/119021236/d23b6343-6f93-495b-9302-a75bd24b0a51)
+![下载 (4)](https://github.com/22016759/Coding3-Final-Project/assets/119021236/a98a818e-7014-4aae-bec5-1f37ec862500)
+![下载 (2)](https://github.com/22016759/Coding3-Final-Project/assets/119021236/d07d966c-9efd-4d4d-8bd3-8f950b691faa)
 
