@@ -135,6 +135,14 @@ for epoch in range(EPOCHS):
 
 In this code, I train each pair of images in the data set. For every 10 sessions, we print a dot to show our progress. At the end of each epoch, we use a consistent sample image to generate and save an image so that we can see the improvement of the model over time.
 
+### Training process：
+
+<img width="972" alt="截屏2023-06-22 23 06 13" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/a9181aa3-9564-4d04-bcff-61b4f4acf85c">
+
+<img width="972" alt="截屏2023-06-22 23 09 55" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/34443430-707e-4cd1-9cb9-a384beebe0d8">
+
+<img width="968" alt="截屏2023-06-23 00 03 19" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/f6ebf20e-3207-4cf8-9166-a659cc96042f">
+
 ## Generate and display images
 
 ```
@@ -169,13 +177,10 @@ In view of this situation, I thought that the original data set might not be ful
 
 ### The result is the following picture
 
-<p align="center">
-<img width="480" alt="截屏2023-06-23 00 03 19" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/65bf8cd5-0a0b-4656-a249-6abbf60c7a2c">
-<img width="520" alt="截屏2023-06-23 22 50 18" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/c573e2b2-584a-4d1d-8261-463fc81d3437">
-</p>
+<img width="947" alt="截屏2023-06-23 22 50 18" src="https://github.com/22016759/Coding3-Final-Project/assets/119021236/8df9cea7-c8fe-4b9a-a16f-3b02530df767">
 
-
+![下载 (2)](https://github.com/22016759/Coding3-Final-Project/assets/119021236/d07d966c-9efd-4d4d-8bd3-8f950b691faa)
 ![下载 (3)](https://github.com/22016759/Coding3-Final-Project/assets/119021236/d23b6343-6f93-495b-9302-a75bd24b0a51)
 ![下载 (4)](https://github.com/22016759/Coding3-Final-Project/assets/119021236/a98a818e-7014-4aae-bec5-1f37ec862500)
-![下载 (2)](https://github.com/22016759/Coding3-Final-Project/assets/119021236/d07d966c-9efd-4d4d-8bd3-8f950b691faa)
+
 
