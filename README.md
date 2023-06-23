@@ -183,4 +183,22 @@ In view of this situation, I thought that the original data set might not be ful
 ![下载 (3)](https://github.com/22016759/Coding3-Final-Project/assets/119021236/d23b6343-6f93-495b-9302-a75bd24b0a51)
 ![下载 (4)](https://github.com/22016759/Coding3-Final-Project/assets/119021236/a98a818e-7014-4aae-bec5-1f37ec862500)
 
+## Problems and deficiencies
 
+1. Fixed input image size: The current model is only suitable for 256x256 images and may require model modification or preprocessing steps for images of different sizes.
+
+2. Single sample evaluation: During training, we only show the prediction results of one sample image, which may not fully reflect the performance of the model. A better approach might be to display a prediction of a set of sample images.
+
+3. Lack of early stopping mechanism: The code does not implement early stopping of the model, that is, stopping training when the model does not improve on the validation set. This can cause the model to overfit and over-learn from the training data, resulting in poor performance on new, unseen data.
+
+4. Parameter tuning is not flexible enough: In the code, many important parameters, such as the number of training rounds (epochs), the learning rate of the optimizer, etc., are hard-coded in the code, which is often inconvenient in practice.
+
+## To improve these problems in the future, the following ways can be considered:
+
+1. Increase input flexibility: Modify the preprocessing steps and model so that it can handle images of various sizes.
+
+2. Enhanced model evaluation: During training, more variables can be used to evaluate the performance of the model, and more complex evaluation measures such as adversarial loss and cycle consistency loss can be considered.
+
+3. Add early stop mechanism: Using early stop prevents overfitting and can reduce training time to some extent. You can set up a validation set and monitor its performance on that set. When performance stops improving, stop training and save the best model.
+
+4. Parameter tuning: To make your code more usable, consider including some key parameters (such as learning rate, number of training rounds, etc.) as function parameters or command line parameters that can be changed without modifying your code.
