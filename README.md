@@ -202,3 +202,16 @@ In view of this situation, I thought that the original data set might not be ful
 3. Add early stop mechanism: Using early stop prevents overfitting and can reduce training time to some extent. You can set up a validation set and monitor its performance on that set. When performance stops improving, stop training and save the best model.
 
 4. Parameter tuning: To make your code more usable, consider including some key parameters (such as learning rate, number of training rounds, etc.) as function parameters or command line parameters that can be changed without modifying your code.
+
+## Citation
+```
+@inproceedings{CycleGAN2017,
+  title={Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networkss},
+  author={Zhu, Jun-Yan and Park, Taesung and Isola, Phillip and Efros, Alexei A},
+  booktitle={Computer Vision (ICCV), 2017 IEEE International Conference on},
+  year={2017}
+}
+```
+Code borrows from pix2pix and DCGAN. The data loader is modified from DCGAN and Context-Encoder. The generative network is adopted from neural-style with Instance Normalization.
+
+
